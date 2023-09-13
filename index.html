@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Selamat Datang di KATIK</title>
+</head>
+<body>
+    <h1>KATIK: Kalkulator Matematika</h1>
+    <div class="container">
+        <h2>WELCOME TO KATIK</h2>
+        <h3>Kalkulator perhitungan luas dan keliling persegi dan persegi panjang</h3>
+        <p>Pilih bentuk geometri:</p>
+        <select id="shape" class="input" onchange="changeShape()">
+            <option value="square">Persegi</option>
+            <option value="rectangle">Persegi Panjang</option>
+        </select>
+        <p id="rumusTitle">Rumus:</p>
+        <p id="rumusLuas">Luas = s x s</p>
+        <p id="rumusKeliling">Keliling = 4 x s</p>
+        <p>Masukkan panjang sisi A:</p>
+        <input id="sideA" type="number" class="input" value="0 cm">
+        <p id="sideBLabel">Masukkan panjang sisi B:</p>
+        <input id="sideB" type="number" class="input" value="0 cm<sup>2</sup>">
+        <button id="calculate" class="button" onclick="calculateAreaAndPerimeter()">Hitung Luas dan Keliling</button>
+        <div class="output">
+            <h3>HASIL PERHITUNGAN:</h3>
+            <p id="area">Luas = 0 cm<sup>2</sup>.</p>
+            <p id="perimeter">Keliling = 0 cm</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
